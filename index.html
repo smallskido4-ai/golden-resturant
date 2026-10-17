@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zum Goldenen Teller – deutsche Küche, frisch zubereitet. Entdecken Sie unsere Speisekarte und reservieren Sie Ihren Tisch.">
+  <title>Zum Goldenen Teller | Deutsches Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#start" class="logo">
+      <span class="logo-icon">✦</span>
+      <span>Zum Goldenen Teller</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Menü öffnen" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#start">Startseite</a>
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#reservierung">Reservierung</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="hero-content">
+        <p class="eyebrow">TRADITION TRIFFT GENUSS</p>
+        <h1>Ein Geschmack<br>von Zuhause.</h1>
+        <p>
+          Entdecken Sie traditionelle deutsche Küche,
+          frisch zubereitet und mit Liebe serviert.
+        </p>
+        <div class="hero-buttons">
+          <a href="#speisekarte" class="btn btn-primary">
+            Speisekarte entdecken
+          </a>
+          <a href="#reservierung" class="btn btn-outline">
+            Tisch reservieren
+          </a>
+        </div>
+        <div class="hero-note">
+          Frische Zutaten · Deutsche Küche · Herzlicher Service
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome section" id="ueber-uns">
+      <p class="eyebrow">WILLKOMMEN BEI UNS</p>
+      <h2>Gutes Essen. Gute Gesellschaft.</h2>
+      <p class="section-description">
+        Im Zum Goldenen Teller verbinden wir beliebte Klassiker
+        der deutschen Küche mit einer gemütlichen Atmosphäre.
+        Ob Mittagessen mit Freunden oder ein besonderes Abendessen –
+        bei uns sind Sie herzlich willkommen.
+      </p>
+    </section>
+
+    <section class="menu-section section" id="speisekarte">
+      <p class="eyebrow">UNSERE KÜCHE</p>
+      <h2>Die Speisekarte</h2>
+      <p class="section-description">
+        Entdecken Sie unsere beispielhafte Auswahl beliebter Klassiker.
+      </p>
+
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=800&q=85"
+            alt="Herzhaftes Fleischgericht mit Beilagen">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h3>Wiener Schnitzel</h3>
+              <span>€18,90</span>
+            </div>
+            <p>Mit Kartoffelsalat und frischer Zitrone.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85"
+            alt="Frischer Salat mit Gemüse">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h3>Frischer Gartensalat</h3>
+              <span>€11,50</span>
+            </div>
+            <p>Saisonale Zutaten mit hausgemachtem Dressing.</p>
+          </div>
+        </article>
+
+        <article class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85"
+            alt="Herzhaftes Grillgericht">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h3>Grillteller</h3>
+              <span>€19,90</span>
+            </div>
+            <p>Herzhaftes Grillgericht mit Beilagen.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="demo-note">
+        Hinweis: Beispielgerichte und Preise für die Website-Demo.
+        Vor einer Veröffentlichung bitte überprüfen und anpassen.
+      </p>
+    </section>
+
+    <section class="reservation section" id="reservierung">
+      <div class="reservation-content">
+        <p class="eyebrow">WIR FREUEN UNS AUF SIE</p>
+        <h2>Reservieren Sie Ihren Tisch</h2>
+        <p>
+          Planen Sie einen gemütlichen Abend?
+          Senden Sie uns Ihre Reservierungsanfrage.
+        </p>
+
+        <form id="reservationForm">
+          <label for="guestName">Ihr Name</label>
+          <input type="text" id="guestName"
+            placeholder="Vor- und Nachname" required>
+
+          <label for="guestEmail">E-Mail-Adresse</label>
+          <input type="email" id="guestEmail"
+            placeholder="name@beispiel.de" required>
+
+          <div class="form-row">
+            <div>
+              <label for="guestDate">Datum</label>
+              <input type="date" id="guestDate" required>
+            </div>
+            <div>
+              <label for="guestCount">Personen</label>
+              <select id="guestCount" required>
+                <option value="1">1 Person</option>
+                <option value="2" selected>2 Personen</option>
+                <option value="3">3 Personen</option>
+                <option value="4">4 Personen</option>
+                <option value="5">5 Personen</option>
+                <option value="6">6 Personen</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="guestTime">Uhrzeit</label>
+          <select id="guestTime" required>
+            <option value="">Bitte wählen</option>
+            <option>12:00</option>
+            <option>13:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+            <option>19:00</option>
+            <option>20:00</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">
+            Anfrage vorbereiten
+          </button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+        <p class="demo-note">
+          Demo: Das Formular versendet noch keine echte Reservierung.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact section" id="kontakt">
+      <p class="eyebrow">BESUCHEN SIE UNS</p>
+      <h2>Kontakt & Öffnungszeiten</h2>
+
+      <div class="contact-grid">
+        <div>
+          <h3>Unsere Adresse</h3>
+          <p>Ihre Straße 12<br>10115 Berlin, Deutschland</p>
+          <p class="demo-note">Beispieladresse – bitte ersetzen.</p>
+        </div>
+
+        <div>
+          <h3>Öffnungszeiten</h3>
+          <p>Dienstag – Sonntag<br>12:00 – 22:00 Uhr</p>
+          <p>Montag: Ruhetag</p>
+          <p class="demo-note">Beispielzeiten – bitte bestätigen.</p>
+        </div>
+
+        <div>
+          <h3>Kontaktieren Sie uns</h3>
+          <p>E-Mail: info@beispiel.de</p>
+          <p>Telefon: +49 30 12345678</p>
+          <p class="demo-note">Beispielkontaktdaten – bitte ersetzen.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#start" class="footer-logo">Zum Goldenen Teller</a>
+    <p>Mit Liebe gekocht. Mit Freude serviert.</p>
+    <p>© <span id="year"></span> Zum Goldenen Teller</p>
+    <div class="footer-links">
+      <a href="#impressum">Impressum</a>
+      <a href="#datenschutz">Datenschutz</a>
+    </div>
+    <p class="demo-note">
+      Demo-Website: Vor dem geschäftlichen Einsatz rechtliche Angaben
+      und Datenschutzinformationen ergänzen.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
