@@ -1,2 +1,2 @@
 # golden-resturant
-German restaurant website demo
+German resturant website demo
